@@ -1,0 +1,24 @@
+# Ash's details
+name = input("enter name: ")
+height_m = float(input("enter the height: "))
+weight_kg = int(input("enter the weight :"))
+
+# Calculate BMI
+bmi = weight_kg / (height_m ** 2)
+
+# Determine weight status
+if bmi < 18.5:
+    weight_status = "underweight"
+elif 18.5 <= bmi < 24.9:
+    weight_status = "normal weight"
+elif 25 <= bmi < 29.9:
+    weight_status = "overweight"
+else:
+    weight_status = "obese"
+
+# Output the result
+print(f"Name: {name}")
+print(f"Height (m): {height_m}")
+print(f"Weight (kg): {weight_kg}")
+#print(f"ok, With a BMI of {bmi:.1f}, Ash is {weight_status}.")
+print(f"ok , {name} you are slightly overweight , with a bmi of {bmi :.1f}. ")
